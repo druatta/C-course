@@ -1,0 +1,8 @@
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\ReversingArgumentsTests.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\ReversingArgumentsTests.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\ReversingArguments.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\ReversingArguments.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.pdb

@@ -1,0 +1,6 @@
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\bin\Debug\ReversingArguments.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\obj\Debug\ReversingArguments.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\bin\Debug\ReversingArguments.dll.config
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\bin\Debug\ReversingArguments.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\obj\Debug\ReversingArguments.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\obj\Debug\ArgumentReverser.csprojResolveAssemblyReference.cache

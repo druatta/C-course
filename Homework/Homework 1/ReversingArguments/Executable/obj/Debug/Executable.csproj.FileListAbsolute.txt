@@ -1,0 +1,8 @@
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\Executable\bin\Debug\Executable.exe.config
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\Executable\bin\Debug\Executable.exe
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\Executable\bin\Debug\Executable.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\Executable\obj\Debug\Executable.exe
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\Executable\obj\Debug\Executable.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\Executable\obj\Debug\Executable.csprojResolveAssemblyReference.cache
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\Executable\bin\Debug\ReversingArguments.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\Executable\bin\Debug\ReversingArguments.pdb

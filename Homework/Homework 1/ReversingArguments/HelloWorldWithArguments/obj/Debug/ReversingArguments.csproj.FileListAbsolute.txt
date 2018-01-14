@@ -1,0 +1,12 @@
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\HelloWorldWithArguments\bin\Debug\HelloWorldWithArguments.exe.config
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\HelloWorldWithArguments\bin\Debug\HelloWorldWithArguments.exe
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\HelloWorldWithArguments\bin\Debug\HelloWorldWithArguments.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\HelloWorldWithArguments\obj\Debug\ReversingArguments.csprojResolveAssemblyReference.cache
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\HelloWorldWithArguments\obj\Debug\HelloWorldWithArguments.exe
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\HelloWorldWithArguments\obj\Debug\HelloWorldWithArguments.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\bin\Debug\ReversingArguments.exe.config
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\bin\Debug\ReversingArguments.exe
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\bin\Debug\ReversingArguments.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\obj\Debug\ReversingArguments.csprojResolveAssemblyReference.cache
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\obj\Debug\ReversingArguments.exe
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\HelloWorldWithArguments\obj\Debug\ReversingArguments.pdb

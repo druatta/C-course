@@ -1,0 +1,14 @@
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\ReversingArgumentsTests\bin\Debug\ReversingArgumentsTests.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\ReversingArgumentsTests\bin\Debug\ReversingArgumentsTests.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\ReversingArgumentsTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.csprojResolveAssemblyReference.cache
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\ReversingArgumentsTests.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\ReversingArgumentsTests.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\ReversingArguments.exe
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\bin\Debug\ReversingArguments.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.csprojResolveAssemblyReference.cache
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\ReversingArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.pdb
