@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReversingArguments", "HelloWorldWithArguments\ReversingArguments.csproj", "{3FBE5332-43CF-4971-92DC-279B9B1EB717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReversingArgumentsTests", "ReversingArgumentsTests\ReversingArgumentsTests.csproj", "{ED9A51E2-0386-4336-94A9-A829F2606508}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FBE5332-43CF-4971-92DC-279B9B1EB717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBE5332-43CF-4971-92DC-279B9B1EB717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBE5332-43CF-4971-92DC-279B9B1EB717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBE5332-43CF-4971-92DC-279B9B1EB717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9A51E2-0386-4336-94A9-A829F2606508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9A51E2-0386-4336-94A9-A829F2606508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9A51E2-0386-4336-94A9-A829F2606508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9A51E2-0386-4336-94A9-A829F2606508}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorldWithArguments\HelloWorldWithArguments\bin\Debug\HelloWorldWithArguments.exe.config
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorldWithArguments\HelloWorldWithArguments\bin\Debug\HelloWorldWithArguments.exe
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorldWithArguments\HelloWorldWithArguments\bin\Debug\HelloWorldWithArguments.pdb
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorldWithArguments\HelloWorldWithArguments\obj\Debug\HelloWorldWithArguments.csprojResolveAssemblyReference.cache
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorldWithArguments\HelloWorldWithArguments\obj\Debug\HelloWorldWithArguments.exe
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorldWithArguments\HelloWorldWithArguments\obj\Debug\HelloWorldWithArguments.pdb
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\HelloWorldWithArguments\bin\Debug\HelloWorldWithArguments.exe.config
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\HelloWorldWithArguments\obj\Debug\HelloWorldWithArguments.exe
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\HelloWorldWithArguments\obj\Debug\HelloWorldWithArguments.pdb

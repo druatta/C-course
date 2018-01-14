@@ -1,0 +1,3 @@
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\ReversingArgumentsTests\obj\Debug\Namespace.csprojResolveAssemblyReference.cache
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.dll
+C:\Users\DRuatta\Documents\GitHub\CSharpCourse\Homework\Homework 1\HelloWorldWithArguments\ReversingArgumentsTests\obj\Debug\ReversingArgumentsTests.pdb
