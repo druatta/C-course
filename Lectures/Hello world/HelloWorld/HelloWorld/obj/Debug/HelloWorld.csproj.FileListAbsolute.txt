@@ -1,0 +1,6 @@
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+R:\Technology\Users\DRuatta\Current projects\C# course\Lectures\Hello world\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
