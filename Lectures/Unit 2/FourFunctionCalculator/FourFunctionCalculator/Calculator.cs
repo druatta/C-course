@@ -69,6 +69,7 @@ namespace FourFunctionCalculator
                 float LeftValue = float.Parse(LHS.Text);
                 float RightValue = float.Parse(RHS.Text);
                 Calculate(LeftValue, RightValue);
+                AnswerLabel.ForeColor = Color.Black;
             }
             catch (FormatException)
             {
@@ -77,6 +78,7 @@ namespace FourFunctionCalculator
             }
             catch (OverflowException)
             {
+                AnswerLabel.ForeColor = Color.Red;
                 AnswerLabel.Text = "Input value is too large";
             }
 
@@ -91,7 +93,6 @@ namespace FourFunctionCalculator
             {
                 case "+":
                     Result = LeftValue + RightValue;
-                    AnswerLabel.Text = Result.ToString("G10");
                     break;
                 case "-":
                     Result = LeftValue - RightValue;
@@ -108,6 +109,7 @@ namespace FourFunctionCalculator
                 default:
                     break;
             }
+            AnswerLabel.Text = Result.ToString("G10");
         }
 
         private void Calculator_Load(object sender, EventArgs e)
