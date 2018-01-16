@@ -129,9 +129,10 @@
             // EqualsLabel
             // 
             this.EqualsLabel.AutoSize = true;
+            this.EqualsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EqualsLabel.Location = new System.Drawing.Point(245, 50);
             this.EqualsLabel.Name = "EqualsLabel";
-            this.EqualsLabel.Size = new System.Drawing.Size(13, 13);
+            this.EqualsLabel.Size = new System.Drawing.Size(14, 13);
             this.EqualsLabel.TabIndex = 9;
             this.EqualsLabel.Text = "=";
             this.EqualsLabel.Click += new System.EventHandler(this.label2_Click);
@@ -139,6 +140,7 @@
             // AnswerLabel
             // 
             this.AnswerLabel.AutoSize = true;
+            this.AnswerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnswerLabel.Location = new System.Drawing.Point(264, 49);
             this.AnswerLabel.Name = "AnswerLabel";
             this.AnswerLabel.Size = new System.Drawing.Size(0, 13);

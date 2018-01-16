@@ -64,11 +64,13 @@ namespace FourFunctionCalculator
 
         private void AnswerButton_Click(object sender, EventArgs e)
         {
+            string Result = "";
+
             try
             {
                 float LeftValue = float.Parse(LHS.Text);
                 float RightValue = float.Parse(RHS.Text);
-                Calculate(LeftValue, RightValue);
+                Result = Calculate(LeftValue, RightValue, Result);
                 AnswerLabel.ForeColor = Color.Black;
             }
             catch (FormatException)
@@ -81,35 +83,46 @@ namespace FourFunctionCalculator
                 AnswerLabel.ForeColor = Color.Red;
                 AnswerLabel.Text = "Input value is too large";
             }
+            finally
+            {
+
+                AnswerLabel.Text = Result;
+            }
 
 
         }
 
-        private void Calculate(float LeftValue, float RightValue)
+        private string Calculate(float LeftValue, float RightValue, string Result)
         {
-            double Result;
 
             switch (OperatorLabel.Text)
             {
                 case "+":
-                    Result = LeftValue + RightValue;
+                    Result = (LeftValue + RightValue).ToString();
                     break;
                 case "-":
-                    Result = LeftValue - RightValue;
-                    AnswerLabel.Text = Result.ToString("G10");
+                    Result = (LeftValue - RightValue).ToString();
                     break;
                 case "*":
-                    Result = LeftValue * RightValue;
-                    AnswerLabel.Text = Result.ToString("G10");
+                    Result = (LeftValue * RightValue).ToString();
                     break;
                 case "/":
-                    Result = LeftValue / RightValue;
-                    AnswerLabel.Text = Result.ToString("G10");
+                    Result = (LeftValue / RightValue).ToString();
                     break;
                 default:
                     break;
             }
-            AnswerLabel.Text = Result.ToString("G10");
+            CheckForInfinity(Result);
+            return Result;
+        }
+
+        private void CheckForInfinity(string Result)
+        {
+            if (Result.Equals("Infinity"))
+            {
+                AnswerLabel.ForeColor = Color.Red;
+                AnswerLabel.Text = "Input is not a valid number";
+            }
         }
 
         private void Calculator_Load(object sender, EventArgs e)
