@@ -50,10 +50,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BlankBoard.cs" />
+    <Compile Include="ChessBoard.cs" />
     <Compile Include="Executable.cs" />
-    <Compile Include="Queens.cs" />
+    <Compile Include="Queen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EightQueensPuzzle\Eight queens puzzle.csproj">
+      <Project>{0cd265ff-0a23-4d3d-a040-9bb4cb721c50}</Project>
+      <Name>Eight queens puzzle</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

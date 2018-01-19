@@ -1,0 +1,9 @@
+﻿
+
+namespace EightQueensPuzzle
+{
+    class Queen
+    {
+
+    }
+}
