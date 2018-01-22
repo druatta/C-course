@@ -1,17 +1,15 @@
-﻿
-
-namespace EightQueensPuzzle
+﻿namespace EightQueensPuzzle
 {
     public class ChessBoard
     {
         public enum Piece { Blank, Queen, PossibleQueenMove }
-        public Piece[,] Matrix;
+        public Piece[,] RowsAndColumns;
         public int SideSize;
 
         public ChessBoard(int SideSize)
         {
             this.SideSize = SideSize;
-            Matrix = new Piece[SideSize, SideSize];
+            RowsAndColumns = new Piece[SideSize, SideSize];
             CreateRowsAndColumns();
         }
 
@@ -21,10 +19,9 @@ namespace EightQueensPuzzle
             {
                 for (int j = 0; j < SideSize; j++)
                 {
-                    Matrix[i,j] = Piece.Blank;
+                    RowsAndColumns[i, j] = Piece.Blank;
                 }
             }
         }
-
     }
 }
