@@ -6,9 +6,16 @@ namespace Unit_tests
     public class Queen
     {
         [TestMethod]
-        public void CheckIfMoveHasFallenOffOfTheBoard()
+        public void AQueenShouldNotBeAbleToTakeAnother()
+        {
+
+        } 
+
+        [TestMethod]
+        public void AMoveShouldNotFallOffOfTheBoard()
         {
             Assert.Fail();
         }
+        
     }
 }
