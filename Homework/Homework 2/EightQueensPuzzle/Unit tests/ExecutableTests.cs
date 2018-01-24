@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Unit_tests
 {
-    class Executable
+    class ExecutableTests
     {
 
     }

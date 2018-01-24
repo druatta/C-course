@@ -6,15 +6,20 @@ namespace EightQueensPuzzle
     {
         public enum Piece { Blank, Queen, PossibleQueenMove }
         public Piece[,] RowsAndColumns;
-        public int SideSize;
+        public int NumberOfRowsAndColumns;
+        public int 
 
-        public ChessBoard(int SideSize)
+        public ChessBoard(int NumberOfRowsAndColumns)
         {
-            this.SideSize = SideSize;
+            this.NumberOfRowsAndColumns = NumberOfRowsAndColumns;
             ThrowExceptionIfSideSizeIsInvalid();
             CreateRowsAndColumns();
         }
 
+        public void AddQueen()
+        {
+            Queen Queen = new Queen();
+        }
 
         private void ThrowExceptionIfSideSizeIsInvalid()
         {
@@ -24,24 +29,28 @@ namespace EightQueensPuzzle
 
         private void ThrowExceptionIfSideSizeIsTwo()
         {
-            if (SideSize == 2)
+            if (NumberOfRowsAndColumns == 2)
             {
-                throw new ArgumentException("Board size cannot be 2x2");
+                throw new ArgumentException("There is no solution for a 2x2 board.");
             }
         }
 
         private void ThrowExceptionIfSideSizeIsThree()
         {
+            if (NumberOfRowsAndColumns == 3)
+            {
+                throw new ArgumentException("There is no solution for a 3x3 board.");
+            }
 
         }
 
         private void CreateRowsAndColumns()
         {
-            RowsAndColumns = new Piece[SideSize, SideSize];
+            RowsAndColumns = new Piece[NumberOfRowsAndColumns, NumberOfRowsAndColumns];
 
-            for (int i = 0; i < SideSize; i++)
+            for (int i = 0; i < NumberOfRowsAndColumns; i++)
             {
-                for (int j = 0; j < SideSize; j++)
+                for (int j = 0; j < NumberOfRowsAndColumns; j++)
                 {
                     RowsAndColumns[i, j] = Piece.Blank;
                 }
