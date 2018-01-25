@@ -52,6 +52,8 @@
   <ItemGroup>
     <Compile Include="ChessBoardTests.cs" />
     <Compile Include="ExecutableTests.cs" />
+    <Compile Include="PieceTests.cs" />
+    <Compile Include="QueenMoveTests.cs" />
     <Compile Include="QueenTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

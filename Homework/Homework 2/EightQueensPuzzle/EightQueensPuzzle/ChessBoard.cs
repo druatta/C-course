@@ -7,7 +7,7 @@ namespace EightQueensPuzzle
         public enum Piece { Blank, Queen, PossibleQueenMove }
         public Piece[,] RowsAndColumns;
         public int NumberOfRowsAndColumns;
-        public int 
+        
 
         public ChessBoard(int NumberOfRowsAndColumns)
         {
@@ -15,12 +15,7 @@ namespace EightQueensPuzzle
             ThrowExceptionIfSideSizeIsInvalid();
             CreateRowsAndColumns();
         }
-
-        public void AddQueen()
-        {
-            Queen Queen = new Queen();
-        }
-
+        
         private void ThrowExceptionIfSideSizeIsInvalid()
         {
             ThrowExceptionIfSideSizeIsTwo();

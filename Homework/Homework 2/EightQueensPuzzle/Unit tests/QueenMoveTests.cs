@@ -4,8 +4,7 @@ using System;
 namespace Unit_tests
 {
     [TestClass]
-    public class ExecutableTests
+    public class QueenMoveTests
     {
-
     }
 }
