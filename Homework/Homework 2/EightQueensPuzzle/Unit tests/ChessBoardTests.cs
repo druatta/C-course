@@ -7,6 +7,7 @@ namespace Unit_tests
     [TestClass]
     public class ChessBoardTests
     {
+
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void ArgumentExceptionShouldBeThrownIfSideSizeIsTwo()
@@ -30,8 +31,20 @@ namespace Unit_tests
             ChessBoard TestBoard = new ChessBoard(SideSize);
 
             Console.WriteLine("SideSize is {0}", SideSize);
-            Console.WriteLine("TestBoard.SideSize is {0}", TestBoard.NumberOfRowsAndColumns);
-            Assert.AreEqual(SideSize, TestBoard.NumberOfRowsAndColumns);
+            Console.WriteLine("TestBoard.SideSize is {0}", TestBoard.SideSize);
+            Assert.AreEqual(SideSize, TestBoard.SideSize);
+        }
+
+        [TestMethod]
+        public void AFourByFourBoardShouldHaveSixteenPieces()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void AllOfANewBoardsPiecesShouldBeBlank()
+        {
+            Assert.Fail();
         }
 
     }

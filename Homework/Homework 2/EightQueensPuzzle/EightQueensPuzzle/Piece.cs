@@ -2,66 +2,28 @@
 
 namespace EightQueensPuzzle
 {
-    class Piece
+    public class Piece
     {
-        private Random RandomNumberGenerator = new Random();
+        private static Random RandomNumberGenerator = new Random();
         private const int One = 1;
-
-        public struct RowAndColumnIndex
-        {
-            private int CurrentRowNumber;
-            private int CurrentColumnNumber;
-
-            public RowAndColumnIndex(int RowNumber, int ColumnNumber)
-            {
-                CurrentRowNumber = RowNumber;
-                CurrentColumnNumber = ColumnNumber; 
-            }
-
-            public int RowNumber
-            {
-                get
-                {
-                    return CurrentRowNumber;
-                }
-                set
-                {
-                    CurrentRowNumber = value;
-                }
-            }
-
-            public int ColumnNumber
-            {
-                get
-                {
-                    return CurrentColumnNumber;
-                }
-                set
-                {
-                    CurrentColumnNumber = value;
-                }
-            }
-        }
+        public int RowNumber; 
+        public int ColumnNumber;
 
         public Piece(ChessBoard ChessBoard)
         {
-            CreateRowAndColumnIndex();
+            GenerateRowNumber(ChessBoard);
+            GenerateColumnNumber(ChessBoard);
         }
 
-        private void CreateRowAndColumnIndex()
+        public void GenerateRowNumber(ChessBoard ChessBoard)
         {
-            CreateRowNumber();
-            CreateColumnNumber();
+            RowNumber = RandomNumberGenerator.Next(One, ChessBoard.SideSize);
         }
 
-        private void CreateRowNumber(ChessBoard ChessBoard)
+        public void GenerateColumnNumber(ChessBoard ChessBoard)
         {
-            RowAndColumnIndex.RowNumber = RandomNumberGenerator.Next(One, ChessBoard.NumberOfRowsAndColumns)
+            ColumnNumber = RandomNumberGenerator.Next(One, ChessBoard.SideSize);
         }
-
-        private void CreateColumnNumber()
-        {
-
-        }
+        
     }
 }

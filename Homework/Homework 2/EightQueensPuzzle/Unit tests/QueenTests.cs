@@ -7,23 +7,16 @@ namespace Unit_tests
     public class QueenTests
     {
         [TestMethod]
-        public void AQueenShouldNotBeAbleToTakeAnother()
+        public void TwoQueensShouldNotBeAbleToBePlacedOnTopOfOneAnother()
         {
             Assert.Fail();
         }
 
         [TestMethod]
-        public void AMoveShouldNotFallOffOfTheBoard()
+        public void AQueenShouldNotBeAbleToBePlacedIfTheBoardIsFull()
         {
             Assert.Fail();
         }
-
-        [TestMethod]
-        public void AQueenShouldNotBeAbleToBePlacedIfThereAreNoBlankSpaces()
-        {
-            Assert.Fail();
-        }
-
 
         [TestMethod]
         public void TheFirstQueenShouldBeAbleToBePlacedAnywhereOnTheBoard()
