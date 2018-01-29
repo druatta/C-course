@@ -35,10 +35,27 @@ namespace EightQueensPuzzleTests
         }
 
         [TestMethod]
-        public void AFourByFourBoardShouldHaveSixteenBlankSpaces()
+        public void ANewEightByEightBoardShouldHaveSixtyFourBlankSpaces()
         {
-            Assert.Fail();
+            int SideSize = 8;
+            ChessBoard TestBoard = new ChessBoard(SideSize);
+
+            int NumberOfBlankSpaces = 0;
+            foreach (ChessBoard.Piece Element in TestBoard.Space)
+            {
+                if (Element == ChessBoard.Piece.Blank)
+                {
+                    NumberOfBlankSpaces++;
+                }
+            }
+
+            int SixtyFour = 64;
+            Console.WriteLine("NumberOfBlankSpaces is {0}, should be {1}", NumberOfBlankSpaces, SixtyFour);
+            Assert.AreEqual(NumberOfBlankSpaces, SixtyFour);
         }
+
+
+
 
 
     }

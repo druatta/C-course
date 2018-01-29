@@ -1,40 +1,49 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EightQueensPuzzle;
 
-namespace EightQueensPuzzleTests
+namespace Unit_tests
 {
     [TestClass]
     public class QueenTests
     {
         [TestMethod]
-        public void TwoQueensShouldNotBeAbleToBePlacedOnTopOfOneAnother()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod]
-        public void AQueenShouldNotBeAbleToBePlacedIfTheBoardIsFull()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod]
-        public void TheFirstQueenShouldBeAbleToBePlacedAnywhereOnTheBoard()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod]
-        public void CheckingForAQueenAfterAddingItToTheBoard()
+        public void CreatingAQueenShouldNotReturnNull()
         {
             Assert.Fail();
 
-            int SideSize = 100;
+            int SideSize = 4;
             ChessBoard TestBoard = new ChessBoard(SideSize);
-            TestBoard.TryToAddAQueen();
-
+            Queen Queen = new Queen(TestBoard);
 
         }
 
+        [TestMethod]
+        public void OneRandomlyPlacedQueenShouldBeFoundOnTheBoard()
+        {
+
+            Program TestProgram = new Program();
+            TestProgram.RandomlyPlaceAQueen();
+
+            int NumberOfQueens = 0;
+            foreach (ChessBoard.Piece Element in TestProgram.ChessBoard.Space)
+            {
+                if (Element == ChessBoard.Piece.Queen)
+                {
+                    NumberOfQueens++;
+                }
+            }
+
+            int One = 1;
+            Console.WriteLine("NumberOfQueens is {0}, should be {1}", NumberOfQueens, One);
+            Assert.AreEqual(NumberOfQueens, One);
+        }
+
+
+        [TestMethod]
+        public void TwoQueensShouldNotBeAbleToBePlacedOnTopOfEachOther()
+        {
+            Assert.Fail();
+        }
     }
 }

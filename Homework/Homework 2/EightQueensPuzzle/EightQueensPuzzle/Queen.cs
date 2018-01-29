@@ -2,33 +2,35 @@
 
 namespace EightQueensPuzzle
 {
-    public class Queen : Piece
+    public class Queen
     {
+        private static Random RandomNumberGenerator = new Random();;
+        private int Zero = 0;
         ChessBoard ChessBoard;
-        public Queen(ChessBoard ChessBoard) : base(ChessBoard)
+
+        public Queen(ChessBoard ChessBoard)
         {
             this.ChessBoard = ChessBoard;
-            GenerateRowAndColumnNumber();
-        }
-
-        private static Random RandomNumberGenerator = new Random();
-        private const int One = 1;
-
-        public void GenerateRowAndColumnNumber()
-        {
             GenerateRowNumber();
             GenerateColumnNumber();
+            AddQueenToTheChessBoardIndices();
         }
 
-        public void GenerateRowNumber()
+        public int RowNumber;
+        private void GenerateRowNumber()
         {
-            RowNumber = RandomNumberGenerator.Next(One, ChessBoard.SideSize);
+            RowNumber = RandomNumberGenerator.Next(Zero, ChessBoard.SideSize);
         }
 
-        public void GenerateColumnNumber()
+        public int ColumnNumber;
+        private void GenerateColumnNumber()
         {
-            ColumnNumber = RandomNumberGenerator.Next(One, ChessBoard.SideSize);
+            ColumnNumber = RandomNumberGenerator.Next(Zero, ChessBoard.SideSize);
         }
 
+        private void AddQueenToTheChessBoardIndices()
+        {
+            ChessBoard.Space[RowNumber, ColumnNumber] = ChessBoard.Piece.Queen;
+        }
     }
 }

@@ -6,6 +6,6 @@ namespace EightQueensPuzzleTests
     [TestClass]
     public class ExecutableTests
     {
-
+        
     }
 }
