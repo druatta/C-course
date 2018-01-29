@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EightQueensPuzzle
 {
-    class QueenMove
+    public class QueenMove
     {
     }
 }

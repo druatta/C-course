@@ -2,7 +2,7 @@
 using EightQueensPuzzle;
 using System;
 
-namespace Unit_tests
+namespace EightQueensPuzzleTests
 {
     [TestClass]
     public class ChessBoardTests
@@ -30,22 +30,16 @@ namespace Unit_tests
             int SideSize = 8;
             ChessBoard TestBoard = new ChessBoard(SideSize);
 
-            Console.WriteLine("SideSize is {0}", SideSize);
-            Console.WriteLine("TestBoard.SideSize is {0}", TestBoard.SideSize);
+            Console.WriteLine("SideSize is {0}, TestBoard.SideSize is {1}", SideSize, TestBoard.SideSize);
             Assert.AreEqual(SideSize, TestBoard.SideSize);
         }
 
         [TestMethod]
-        public void AFourByFourBoardShouldHaveSixteenPieces()
+        public void AFourByFourBoardShouldHaveSixteenBlankSpaces()
         {
             Assert.Fail();
         }
 
-        [TestMethod]
-        public void AllOfANewBoardsPiecesShouldBeBlank()
-        {
-            Assert.Fail();
-        }
 
     }
 }

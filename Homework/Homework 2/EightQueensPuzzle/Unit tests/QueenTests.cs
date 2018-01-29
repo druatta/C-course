@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EightQueensPuzzle;
 
-namespace Unit_tests
+namespace EightQueensPuzzleTests
 {
     [TestClass]
     public class QueenTests
@@ -22,6 +22,18 @@ namespace Unit_tests
         public void TheFirstQueenShouldBeAbleToBePlacedAnywhereOnTheBoard()
         {
             Assert.Fail();
+        }
+
+        [TestMethod]
+        public void CheckingForAQueenAfterAddingItToTheBoard()
+        {
+            Assert.Fail();
+
+            int SideSize = 100;
+            ChessBoard TestBoard = new ChessBoard(SideSize);
+            TestBoard.TryToAddAQueen();
+
+
         }
 
     }

@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace Unit_tests
+namespace EightQueensPuzzleTests
 {
     [TestClass]
     public class ExecutableTests

@@ -1,11 +1,23 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace Unit_tests
+namespace EightQueensPuzzleTests
 {
     [TestClass]
     public class QueenMoveTests
     {
+        [TestMethod]
+        public void TwoQueensShouldNeverShareTheSameLeftDiagonal()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void TwoQueensShouldNeverShareTheSameRightDiagonal()
+        {
+            Assert.Fail();
+        }
+
         [TestMethod]
         public void TwoQueensShouldNeverShareTheSameColumn()
         {
@@ -26,6 +38,12 @@ namespace Unit_tests
 
         [TestMethod]
         public void AQueenMoveShouldNotFallOffOfTheBoard()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void CheckingForAQueenMoveAfterAddingItToTheBoard()
         {
             Assert.Fail();
         }
