@@ -2,24 +2,13 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EightQueensPuzzle;
 
-namespace Unit_tests
+namespace EightQueensPuzzleTests
 {
     [TestClass]
     public class QueenTests
     {
         [TestMethod]
-        public void CreatingAQueenShouldNotReturnNull()
-        {
-            Assert.Fail();
-
-            int SideSize = 4;
-            ChessBoard TestBoard = new ChessBoard(SideSize);
-            Queen Queen = new Queen(TestBoard);
-
-        }
-
-        [TestMethod]
-        public void OneRandomlyPlacedQueenShouldBeFoundOnTheBoard()
+        public void AQueenShouldBeFoundAfterPlacingItOnTheBoard()
         {
 
             Program TestProgram = new Program();
@@ -42,6 +31,46 @@ namespace Unit_tests
 
         [TestMethod]
         public void TwoQueensShouldNotBeAbleToBePlacedOnTopOfEachOther()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void AQueenShouldNotBeAbleToBePlacedOnAQueenAttackSpace()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void TwoQueensShouldNotBeAbleToBePlacedInTheSameColumn()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void TwoQueensShouldNotBeAbleToBePlacedInTheSameRow()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod]
+        public void TwoQueensShouldNotBeAbleToBePlacedOnTheSameDownRightDiagonal()
+        {
+            Assert.Fail();
+
+            /* Pseudocode
+             * 1. Create a 4x4 board
+             * 2. Add 4 queens
+             * 3. Each queen should add its corresponding attack moves
+             * 4. During each queen's creation, the queen class should check to make 
+             * sure that a queen is not being placed on a queen attack
+             * 5. This test then checks each right diagonal (i,j), (i+1,j+1), (i+2,j+2), etc.
+             * to make sure there is only one queen in each right diagonal
+             */
+        }
+
+        [TestMethod]
+        public void TwoQueensShouldNotBeAbleToBePlacedOnTheSameDownLeftDiagonal()
         {
             Assert.Fail();
         }

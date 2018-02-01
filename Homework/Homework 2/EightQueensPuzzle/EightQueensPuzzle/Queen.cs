@@ -4,7 +4,7 @@ namespace EightQueensPuzzle
 {
     public class Queen
     {
-        private static Random RandomNumberGenerator = new Random();;
+        private static Random RandomNumberGenerator = new Random();
         private int Zero = 0;
         ChessBoard ChessBoard;
 

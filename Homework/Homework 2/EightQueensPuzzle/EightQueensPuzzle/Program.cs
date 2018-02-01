@@ -14,7 +14,7 @@ namespace EightQueensPuzzle
         public Program()
         {
             int SideSize = 8;
-            ChessBoard ChessBoard = new ChessBoard(SideSize);
+            ChessBoard = new ChessBoard(SideSize);
         }
 
         static void Main(string[] args)
