@@ -16,25 +16,5 @@ namespace EightQueensPuzzle
             this.ChessBoard = ChessBoard;
             this.Queen = Queen;
         }
-
-        public void AddUpLeftAttacks()
-        {
-
-        }
-
-        public void AddUpRightAttacks()
-        {
-
-        }
-
-        public void AddDownLeftAttacks()
-        {
-
-        }
-
-        public void AddDownRightAttacks()
-        {
-
-        }
     }
 }

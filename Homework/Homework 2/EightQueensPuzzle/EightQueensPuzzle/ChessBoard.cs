@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 
 namespace EightQueensPuzzle
 {
@@ -7,14 +6,17 @@ namespace EightQueensPuzzle
     {
         public int SideSize;
         public Piece[,] Space;
-        public enum Piece { Blank, Queen, QueenAttack }
+        private enum RowNumber { Zero, One, Two, Three, Four, Five, Six, Seven}
+        private enum ColumnNumber { Zero, One, Two, Three, Four, Five, Six, Seven}
+
+        public enum Piece { Blank, Queen }
 
         public ChessBoard(int SideSize)
         {
             this.SideSize = SideSize;
             ThrowExceptionIfSideSizeIsInvalid();
             InitializeBoardMatrix();
-            PopulateTheBoardWithBlankSpaces();
+            AddQueens();
         }
 
         private void ThrowExceptionIfSideSizeIsInvalid()
@@ -62,6 +64,28 @@ namespace EightQueensPuzzle
             Space[RowNumber, ColumnNumber] = Piece.Blank;
         }
 
+        public void AddQueens()
+        {
+            AddQueen(RowNumber.Zero, ColumnNumber.Three);
+            AddQueen(RowNumber.One, ColumnNumber.Six);
+            AddQueen(RowNumber.Two, ColumnNumber.Two);
+            AddQueen(RowNumber.Three, ColumnNumber.Seven);
+            AddQueen(RowNumber.Four, ColumnNumber.Two);
+            AddQueen(RowNumber.Five, ColumnNumber.Four);
+            AddQueen(RowNumber.Six, ColumnNumber.Zero);
+            AddQueen(RowNumber.Seven, ColumnNumber.Five);
+        }
+
+        private void AddQueen(RowNumber RowNumber, ColumnNumber ColumnNumber)
+        {
+            Space[(int)RowNumber, (int)ColumnNumber] = Piece.Queen;
+        }
+
+        private void PrintTheEndOfTheRow()
+        {
+            Console.Write("|");
+        }
+
         public void Print()
         {
             for (int RowNumber = 0; RowNumber < SideSize; RowNumber++)
@@ -71,13 +95,14 @@ namespace EightQueensPuzzle
                 {
                     PrintSquare(RowNumber, ColumnNumber);
                 }
+                PrintTheEndOfTheRow();
             }
         }
 
         private void PrintTheTopOfEachSquare()
         {
             Console.WriteLine();
-            Console.Write("________________________");
+            Console.Write("_________________");
             Console.WriteLine();
         }
 
@@ -90,35 +115,17 @@ namespace EightQueensPuzzle
                 case Piece.Queen:
                     PrintAQueen();
                     break;
-                case Piece.QueenAttack:
-                    PrintAQueenAttack();
-                    break;
-                default:
-                    PrintAnErrorSpace();
-                    break;
             }
         }
 
         private void PrintABlankSpace()
         {
-            Console.Write("|B|");
+            Console.Write("| ");
         }
 
         private void PrintAQueen()
         {
-            Console.Write("|Q|");
+            Console.Write("|Q");
         }
-
-        private void PrintAQueenAttack()
-        {
-            Console.Write("|A|");
-        }
-
-        private void PrintAnErrorSpace()
-        {
-            Console.Write("|E|");
-        }
-
-
     }
 }
