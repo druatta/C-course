@@ -70,7 +70,7 @@ namespace EightQueensPuzzle
             AddQueen(RowNumber.One, ColumnNumber.Six);
             AddQueen(RowNumber.Two, ColumnNumber.Two);
             AddQueen(RowNumber.Three, ColumnNumber.Seven);
-            AddQueen(RowNumber.Four, ColumnNumber.Two);
+            AddQueen(RowNumber.Four, ColumnNumber.One);
             AddQueen(RowNumber.Five, ColumnNumber.Four);
             AddQueen(RowNumber.Six, ColumnNumber.Zero);
             AddQueen(RowNumber.Seven, ColumnNumber.Five);
@@ -102,7 +102,7 @@ namespace EightQueensPuzzle
         private void PrintTheTopOfEachSquare()
         {
             Console.WriteLine();
-            Console.Write("_________________");
+            Console.Write("__________________________________");
             Console.WriteLine();
         }
 
@@ -120,12 +120,12 @@ namespace EightQueensPuzzle
 
         private void PrintABlankSpace()
         {
-            Console.Write("| ");
+            Console.Write("|   ");
         }
 
         private void PrintAQueen()
         {
-            Console.Write("|Q");
+            Console.Write("| Q ");
         }
     }
 }
