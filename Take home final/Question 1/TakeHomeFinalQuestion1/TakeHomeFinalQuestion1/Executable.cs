@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace TakeHomeFinalQuestion1
 {
-    class Shape
+    class Executable
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-        }
+            Circle circleA = new Circle();
 
+        }
     }
 }
