@@ -10,19 +10,19 @@ namespace TakeHomeFinalQuestion1
     {
         protected string name { get; set; }
         static int count { get; set;}
-        protected string Color = "Black";
+        protected string Color { get; set; } = "Black";
 
-        Shape(string name)
+        public Shape(string name)
         {
             Console.WriteLine("Shape called" + name + " created");
             count++;
         }
 
-        public abstract void calculateArea();
+        public abstract float calculateArea();
 
-        void ToString()
+        public override string ToString()
         {
-            Console.WriteLine("");
+            return count + " This shape object is called " + name;
         }
 
 
