@@ -1,38 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TakeHomeFinalQuestion1
 {
     class Circle : Shape
     {
-        protected int radius { get; set; }
-        protected new string Color { get; set; } = "Blue";
+        protected int radius;
+        protected new string color = "Blue";
+
+        public Circle()
+        {
+
+        }
 
         public Circle(string name) : base(name)
         {
-            Console.WriteLine("Circle called " + name + "created");
+            Console.WriteLine("Circle called " + name + " created");
         }
 
         public Circle(string name, int radius) : base(name)
         {
-            Console.WriteLine("Circle called " + name + "with a radius of " + radius + " created");
+            Console.WriteLine("Circle called " + name + " with a radius of " + radius + " created");
+            this.radius = radius;
         }
 
-        public override float calculateArea()
+        public override double calculateArea()
         {
-            float area;
+            double area;
             int squared = 2;
             area = Math.PI * Math.Pow(radius, squared);
-            Console.WriteLine("Area is " + area);
+            return area;
         }
 
         public override string ToString()
         {
-            return "This is a circle object called " + name + 
-                " whose radius is " + radius + " and area is " + area
+            return "This is a circle object called " + name +
+                " whose radius is " + radius + " and area is " + calculateArea();
         }
     }
 }
