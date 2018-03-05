@@ -4,42 +4,44 @@ namespace TakeHomeFinalQuestion1
 {
     class Rectangle : Shape
     {
-        protected int width;
-        protected int length;
+        public int Width;
+        public int Length;
         protected const int defaultWidth = 5;
         protected const int defaultLength = 10;
-        protected new string color = "Red";
+        public new string Color = "Red";
 
         public Rectangle()
         {
-
+            Console.WriteLine("Default Rectangle created");
+            Name = "Default Rectangle";
         }
 
         public Rectangle(string name) : base(name)
         {
-            Console.WriteLine("Rectangle called " + name + " created");
-            width = defaultWidth;
-            length = defaultLength;
+            Console.WriteLine("Rectangle called " + name + " created " +
+                "with default length and width");
+            Width = defaultWidth;
+            Length = defaultLength;
         }
 
         public Rectangle(string name, int length, int width) : base(name)
         {
             Console.WriteLine("Rectangle called " + name +  
                 " created with length " + length + " and width " + width);
-            this.length = length;
-            this.width = width;
+            this.Length = length;
+            this.Width = width;
         }
 
         public override double calculateArea()
         {
-            return length * width;
+            return Length * Width;
         }
 
         public override string ToString()
         {
-            return "This is a Rectangle object called " + name + " whose length is "
-                + length + " and width is " + width + " and area is " + calculateArea() +
-                " of color " + color;
+            return "This is a Rectangle object called " + Name + " whose length is "
+                + Length + " and width is " + Width + " and area is " + calculateArea() +
+                " of color " + Color;
         }
 
 

@@ -4,19 +4,21 @@ namespace TakeHomeFinalQuestion1
 {
     public abstract class Shape
     {
-        protected string name;
-        public static int count;
-        protected string color = "Black";
+        public string Name;
+        public static int count = 0;
+        protected string Color;
         
         public Shape()
         {
             count++;
+            Name = "Default Shape";
+            Color = "Black";
         }
 
-        public Shape(string name)
+        public Shape(string Name)
         {
-            Console.WriteLine("Shape called " + name + " created");
-            this.name = name;
+            Console.WriteLine("Shape called " + Name + " created");
+            this.Name = Name;
             count++;
         }
 
@@ -24,7 +26,7 @@ namespace TakeHomeFinalQuestion1
 
         public override string ToString()
         {
-            return count + " This shape object is called " + name;
+            return count + " This shape object is called " + Name;
         }
 
 

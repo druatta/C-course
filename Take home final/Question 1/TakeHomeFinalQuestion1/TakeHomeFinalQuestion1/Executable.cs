@@ -13,8 +13,31 @@ namespace TakeHomeFinalQuestion1
             Rectangle rectangleB = new Rectangle("Rectangle-B");
             Rectangle rectangleC = new Rectangle("Rectangle-C", 5, 8);
             Square squareA = new Square();
+            Square squareB = new Square("Square-B");
+            Square squareC = new Square("Square-C");
 
-            Console.WriteLine("Count is " + Shape.count);
+            Console.WriteLine();
+            Console.WriteLine(circleA);
+            Console.WriteLine(circleB);
+            Console.WriteLine(circleC);
+            Console.WriteLine(rectangleA);
+            Console.WriteLine(rectangleB);
+            Console.WriteLine(rectangleC);
+            Console.WriteLine(squareA);
+            Console.WriteLine(squareB);
+            Console.WriteLine(squareC);
+            
+
+            Console.WriteLine();
+            Console.WriteLine(circleA.Name + "\t" + circleA.Radius + " has area: " + circleA.calculateArea() + "\t" + circleA.Color);
+            Console.WriteLine(circleB.Name + "\t" + circleB.Radius + " has area: " + circleB.calculateArea() + "\t" + circleB.Color);
+            Console.WriteLine(circleC.Name + "\t" + circleC.Radius + " has area: " + circleC.calculateArea() + "\t" + circleC.Color);
+            Console.WriteLine(rectangleA.Name + "\t" + rectangleA.Width + "\t" + rectangleA.Length + " has area: " + rectangleA.calculateArea() + "\t" + rectangleB.Color);
+            Console.WriteLine(rectangleB.Name + "\t" + rectangleB.Width + "\t" + rectangleB.Length + " has area: " + rectangleB.calculateArea() + "\t" + rectangleB.Color);
+            Console.WriteLine(rectangleC.Name + "\t" + rectangleC.Width + "\t" + rectangleC.Length + " has area: " + rectangleC.calculateArea() + "\t" + rectangleC.Color);
+            Console.WriteLine(squareA.Name + "\t" + squareA.Width + " has area: " + squareA.calculateArea() + "\t" + squareA.Color);
+            Console.WriteLine(squareB.Name + "\t" + squareB.Width + " has area: " + squareB.calculateArea() + "\t" + squareB.Color);
+            Console.WriteLine(squareC.Name + "\t" + squareC.Width + " has area: " + squareC.calculateArea() + "\t" + squareC.Color);
             Console.Read();
         }
     }
