@@ -8,18 +8,11 @@ namespace Question2Tests
     public class AudioBookTests
     {
         [TestMethod]
-        public void UserNamedDanielShouldBeAbleToCheckOutAnAvailableTestAudioBook()
+        public void GetHMSShouldReturnTwoHoursForTestAudioBook1()
         {
             Library TestLibrary = new Library();
-            TestLibrary.TestAudioBook.CheckOut(TestLibrary.Daniel);
-        }
-
-        [TestMethod]
-        public void GetHMSShouldReturnTwoHoursForTestAudioBook()
-        {
-            Library TestLibrary = new Library();
-            TestLibrary.TestAudioBook.CheckOut(TestLibrary.Daniel);
-            Assert.AreEqual("02:00:00", TestLibrary.TestAudioBook.getHMS());
+            TestLibrary.TestAudioBook1.CheckOut(TestLibrary.Daniel);
+            Assert.AreEqual("02:00:00", TestLibrary.TestAudioBook1.getHMS());
         }
 
     }

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Question2
 {
@@ -60,7 +57,6 @@ namespace Question2
                 checkInTime = DateTime.MinValue;
                 isAvailable = false;
                 isOnHold = false;
-                Console.WriteLine("Checked out the following library book:\t" + ISBN);
             }
             else
             {
@@ -90,7 +86,7 @@ namespace Question2
             {
                 currentUser = u;
                 isAvailable = false;
-                isOnHold = false;
+                isOnHold = true;
                 checkOutTime = DateTime.Now;
                 Console.WriteLine(ISBN + " is on hold for " + currentUser.UserName + " at " + checkOutTime);
             }

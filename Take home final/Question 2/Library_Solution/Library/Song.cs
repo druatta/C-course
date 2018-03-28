@@ -1,19 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Question2
 {
-    public class Song : Item, Iloanable
+    public class Song : Item, Iloanable, IDigital
     {
         private DigitalDisc.DiscType mediaType;
 
-        internal DigitalDisc.DiscType MediaType
+        public DigitalDisc.DiscType MediaType
         {
             get { return mediaType; }
             set { mediaType = value; }
         }
+
+        public TimeSpan LengthInSecondsAsATimeSpan;
+
+        public string getHMS()
+        {
+            LengthInSecondsAsATimeSpan = TimeSpan.FromSeconds(lengthSeconds);
+            return LengthInSecondsAsATimeSpan.ToString();
+        }
+
+
         private uint lengthSeconds;
 
         public uint LengthInSeconds
@@ -22,18 +29,14 @@ namespace Question2
             set { lengthSeconds = value; }
         }
 
-        public Song()
-            : base()
-        {
-            lengthSeconds = 0;
-            mediaType = DigitalDisc.DiscType.CD;
-        }
 
         public Song(ushort myYear, string myTitle, DigitalDisc.DiscType disc, uint sec)
             : base(myTitle, myYear)
         {
             mediaType = disc;
             lengthSeconds = sec;
+            isAvailable = true;
+            isOnHold = false;
         }
 
 
@@ -58,12 +61,14 @@ namespace Question2
                 checkInTime = DateTime.MinValue;
                 isAvailable = false;
                 isOnHold = false;
-                Console.WriteLine(title + " is issued to " + currentUser.UserName + " at " + checkOutTime);
+                Console.WriteLine(title + " is issued to " +
+                    currentUser.UserName + " at " + checkOutTime
+                    + " with length " + getHMS());
 
             }
             else
             {
-                Console.WriteLine(title + " is not available to check-out");
+                throw new InvalidOperationException(title + " is not available to check out");
             }
         }
 

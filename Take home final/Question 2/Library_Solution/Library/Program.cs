@@ -13,14 +13,14 @@ namespace Question2
 
         public static void CheckOutAndCheckInATestAudioBook()
         {
-            TestLibrary.TestAudioBook.CheckOut(TestLibrary.Daniel);
-            Console.WriteLine("Length of this audiobook is " + TestLibrary.TestAudioBook.getHMS());
-            TestLibrary.TestAudioBook.CheckIn();
+            TestLibrary.TestAudioBook1.CheckOut(TestLibrary.Daniel);
+            Console.WriteLine("Length of this audiobook is " + TestLibrary.TestAudioBook1.getHMS());
+            TestLibrary.TestAudioBook1.CheckIn();
         }
 
         public static void CheckOutAndCheckInATestSong()
         {
-            TestLibrary.TestSong.CheckOut(TestLibrary.Daniel);
+            TestLibrary.TestSong1.CheckOut(TestLibrary.Daniel);
         }
         
 

@@ -1,4 +1,6 @@
-﻿namespace Question2
+﻿using System;
+
+namespace Question2
 {
     interface IDigital
     {
