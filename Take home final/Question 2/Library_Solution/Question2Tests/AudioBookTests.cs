@@ -11,8 +11,8 @@ namespace Question2Tests
         public void GetHMSShouldReturnTwoHoursForTestAudioBook1()
         {
             Library TestLibrary = new Library();
-            TestLibrary.TestAudioBook1.CheckOut(TestLibrary.Daniel);
-            Assert.AreEqual("02:00:00", TestLibrary.TestAudioBook1.getHMS());
+            TestLibrary.AudioBook.CheckOut(TestLibrary.Daniel);
+            Assert.AreEqual("02:00:00", TestLibrary.AudioBook.getHMS());
         }
 
     }

@@ -51,5 +51,18 @@ namespace Question2
                 throw new InvalidOperationException(title + " is not available to check out");
             }
         }
+
+        public new void CheckIn()
+        {
+            if (isAvailable == false)
+            {
+                checkInTime = DateTime.Now;
+                Console.WriteLine(title + " is returned by " +
+                    currentUser.UserName + " at " + checkInTime);
+                currentUser = null;
+                isAvailable = true;
+                isOnHold = false;
+            }
+        }
     }
 }

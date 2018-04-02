@@ -11,15 +11,15 @@ namespace Question2Tests
         public void TestAudioBook1ShouldBeAvailableWhenANewLibraryIsCreated()
         {
             Library TestLibrary = new Library();
-            Assert.IsTrue(TestLibrary.TestAudioBook1.isAvailable); 
+            Assert.IsTrue(TestLibrary.AudioBook.isAvailable); 
         }
 
         [TestMethod]
         public void TestAudioBook1ShouldNotBeAvailableAfterItHasBeenCheckedOut()
         {
             Library TestLibrary = new Library();
-            TestLibrary.TestAudioBook1.CheckOut(TestLibrary.Daniel);
-            Assert.IsFalse(TestLibrary.TestAudioBook1.isAvailable);
+            TestLibrary.AudioBook.CheckOut(TestLibrary.Daniel);
+            Assert.IsFalse(TestLibrary.AudioBook.isAvailable);
         }
     }
 }

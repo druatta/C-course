@@ -1,32 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Question2
 {
-    public class Movie : Item, Iloanable
+    public class Movie : Item, Iloanable, IDigital
     {
         private DigitalDisc.DiscType mediaType;
 
-        internal DigitalDisc.DiscType MediaType
+        DigitalDisc.DiscType IDigital.MediaType
         {
             get { return mediaType; }
             set { mediaType = value; }
         }
-        private uint lengthSeconds;
+        private uint lengthInSeconds;
 
         public uint LengthInSeconds
         {
-            get { return lengthSeconds; }
-            set { lengthSeconds = value; }
+            get { return lengthInSeconds; }
+            set { lengthInSeconds = value; }
+        }
+
+        public TimeSpan LengthInSecondsAsATimeSpan;
+        public string getHMS()
+        {
+            LengthInSecondsAsATimeSpan = TimeSpan.FromSeconds(lengthInSeconds);
+            return LengthInSecondsAsATimeSpan.ToString();
         }
 
 
         public Movie()
             : base()
         {
-            lengthSeconds = 0;
+            lengthInSeconds = 0;
             mediaType = DigitalDisc.DiscType.CD;
         }
 
@@ -34,7 +38,9 @@ namespace Question2
             : base(myTitle,myYear)
         {
             mediaType = disc;
-            lengthSeconds = sec;
+            lengthInSeconds = sec;
+            isAvailable = true;
+            isOnHold = false;
         }
 
 
@@ -59,7 +65,8 @@ namespace Question2
                 checkInTime = DateTime.MinValue;
                 isAvailable = false;
                 isOnHold = false;
-                Console.WriteLine(title + " is issued to " + currentUser.UserName + " at " + checkOutTime);
+                Console.WriteLine(title + " is issued to " + currentUser.UserName 
+                    + " at " + checkOutTime + " with length " + getHMS());
 
             }
             else
@@ -73,7 +80,8 @@ namespace Question2
             if (!isAvailable)
             {
                 checkInTime = DateTime.Now;
-                Console.WriteLine(title + " is returned by " + currentUser.UserName + " at " + checkInTime);
+                Console.WriteLine(title + " is returned by " 
+                    + currentUser.UserName + " at " + checkInTime);
                 currentUser = null;
                 isAvailable = true;
                 isOnHold = false;

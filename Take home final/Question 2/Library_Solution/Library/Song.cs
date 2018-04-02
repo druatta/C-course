@@ -6,7 +6,7 @@ namespace Question2
     {
         private DigitalDisc.DiscType mediaType;
 
-        public DigitalDisc.DiscType MediaType
+        DigitalDisc.DiscType IDigital.MediaType
         {
             get { return mediaType; }
             set { mediaType = value; }

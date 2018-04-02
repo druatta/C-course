@@ -4,29 +4,22 @@ namespace Question2
 {
     class Program
     {
-        static Library TestLibrary = new Library();
         static void Main(string[] args)
         {
-            CheckOutAndCheckInATestAudioBook();
+            Library TestLibrary = new Library();
+            TestLibrary.Song.CheckOut(TestLibrary.Daniel);
+            TestLibrary.Song.CheckIn();
+            TestLibrary.Movie.CheckOut(TestLibrary.Daniel);
+            TestLibrary.Movie.CheckIn();
+            TestLibrary.AudioBook.CheckOut(TestLibrary.Daniel);
+            TestLibrary.AudioBook.CheckIn();
             PauseTheConsole();
         }
-
-        public static void CheckOutAndCheckInATestAudioBook()
-        {
-            TestLibrary.TestAudioBook1.CheckOut(TestLibrary.Daniel);
-            Console.WriteLine("Length of this audiobook is " + TestLibrary.TestAudioBook1.getHMS());
-            TestLibrary.TestAudioBook1.CheckIn();
-        }
-
-        public static void CheckOutAndCheckInATestSong()
-        {
-            TestLibrary.TestSong1.CheckOut(TestLibrary.Daniel);
-        }
-        
-
+           
         public static void PauseTheConsole()
         {
             Console.Read();
         }
+
     }
 }
