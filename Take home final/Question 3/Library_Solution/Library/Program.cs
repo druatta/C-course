@@ -19,7 +19,7 @@ namespace Library
         {
             Console.WriteLine("Printing all unsorted elements in the Item List.");
             foreach (Item ExampleItem in TestLibrary.ExampleItemCollection) {
-                Console.WriteLine(ExampleItem);
+                Console.WriteLine(ExampleItem.title);
             }
             Console.WriteLine("Done printing all unsorted elements");
         }

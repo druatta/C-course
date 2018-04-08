@@ -16,13 +16,17 @@ namespace ItemTests
         }
 
         [TestMethod]
-        public void TheOlderItemShouldBeAccessibleUsingAnItemCollectionsDictionaryIterator()
+        public void AllUnsortedItemCollectionElementsShouldBeAccessibleUsingTheForEachIterator()
         {
+            string OlderBookAndNewerBookString = "Newer book" + "Older book";
+            string TestItemCollectionString = null;
+
             foreach (Item ExampleItem in TestItemCollection)
             {
-                Console.WriteLine(ExampleItem.title);
+                TestItemCollectionString += ExampleItem.title;
             }
-            Assert.Fail();
+
+            Assert.AreEqual(OlderBookAndNewerBookString, TestItemCollectionString);
         }
 
     }

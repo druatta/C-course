@@ -22,10 +22,10 @@ namespace Library
 
         public ItemCollection()
         {
-            CreateAnOlderItem();
-            AddTheOlderItemToTheItemDictionary();
             CreateANewerItem();
             AddTheNewerItemToTheItemDictionary();
+            CreateAnOlderItem();
+            AddTheOlderItemToTheItemDictionary();
         }
 
         string OlderItemName = "Older book";
