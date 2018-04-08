@@ -5,7 +5,7 @@ namespace Library
 {
     public class ItemCollection : IEnumerable
     {
-        Dictionary<uint, Item> ItemDictionary = new Dictionary<uint, Item>();
+        public Dictionary<ushort, Item> ItemDictionary = new Dictionary<ushort, Item>();
         IEnumerator IEnumerable.GetEnumerator()
         {
             foreach (Item ExampleItem in ItemDictionary.Values)
@@ -28,7 +28,7 @@ namespace Library
             AddTheOlderItemToTheItemDictionary();
         }
 
-        string OlderItemName = "Older book";
+        public string OlderItemName = "Older book from 1990";
         ushort OlderItemAge = 1990;
         Item OlderItem;
         void CreateAnOlderItem()
@@ -41,7 +41,7 @@ namespace Library
             ItemDictionary.Add(OlderItemAge, OlderItem);
         }
 
-        string NewerItemName = "Newer book";
+        public string NewerItemName = "Newer book from 2000";
         ushort NewerItemAge = 2000;
         Item NewerItem;
         void CreateANewerItem()
@@ -52,6 +52,13 @@ namespace Library
         void AddTheNewerItemToTheItemDictionary()
         {
             ItemDictionary.Add(NewerItemAge, NewerItem);
+        }
+
+        public void SortTheItemCollectionBasedOnYear()
+        {
+            ItemDictionary.Clear();
+            AddTheOlderItemToTheItemDictionary();
+            AddTheNewerItemToTheItemDictionary();
         }
     }
 }

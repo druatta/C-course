@@ -23,6 +23,7 @@ namespace Library
 
             if (year == (int)AgeComparison.Invalid || ComparisonItem.year == (int)AgeComparison.Invalid)
             {
+
                 return (int)AgeComparison.Invalid;
             }
             else if (year > ComparisonItem.year)

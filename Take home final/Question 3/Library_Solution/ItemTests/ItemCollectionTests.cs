@@ -1,6 +1,5 @@
 ﻿using Library;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace ItemTests
 {
@@ -18,14 +17,13 @@ namespace ItemTests
         [TestMethod]
         public void AllUnsortedItemCollectionElementsShouldBeAccessibleUsingTheForEachIterator()
         {
-            string OlderBookAndNewerBookString = "Newer book" + "Older book";
+            string OlderBookAndNewerBookString = TestItemCollection.NewerItemName + TestItemCollection.OlderItemName;
             string TestItemCollectionString = null;
 
             foreach (Item ExampleItem in TestItemCollection)
             {
                 TestItemCollectionString += ExampleItem.title;
             }
-
             Assert.AreEqual(OlderBookAndNewerBookString, TestItemCollectionString);
         }
 
