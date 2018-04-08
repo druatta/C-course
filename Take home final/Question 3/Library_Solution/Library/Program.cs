@@ -7,37 +7,21 @@ namespace Library
 {
     class Program
     {
+        public static Library TestLibrary = new Library();
         static void Main(string[] args)
         {
-            Console.WriteLine("Test Program for Library Application");
-            Console.WriteLine();
-
-            Library myLib = new Library();
-
-            // check-out one book
-            myLib.book1.issue(myLib.user1);
-
-            // try to check-out the same book by another user
-            myLib.book1.issue(myLib.user2);
-
-            // return the book
-            myLib.book1.returnIt();
-
-            // hold a book
-            myLib.ebook1.holdIt(myLib.user2);
-
-            // try to check-out the same book by another user
-            myLib.ebook1.issue(myLib.user1);
-
-            // remove hold
-            myLib.ebook1.removeHolds();
-            Console.WriteLine();
-
-            // print authors
-            Console.WriteLine(myLib.book1.printAuthors);
-            Console.WriteLine(myLib.ebook1.printAuthors);
+            PrintAllUnsortedElementsInTheItemList();
 
             Console.Read();
+        }
+
+        public static void PrintAllUnsortedElementsInTheItemList()
+        {
+            Console.WriteLine("Printing all unsorted elements in the Item List.");
+            foreach (Item ExampleItem in TestLibrary.ExampleItemCollection) {
+                Console.WriteLine(ExampleItem);
+            }
+            Console.WriteLine("Done printing all unsorted elements");
         }
     }
 }

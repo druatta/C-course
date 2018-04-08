@@ -5,8 +5,8 @@ namespace Library
 {
     public class Item : IComparable
     {
-        protected string title;
-        protected ushort year;
+        public string title;
+        public ushort year;
         private Author[] authors = new Author[500];
         private List<Item> PrivateItemList = new List<Item>();
 
@@ -43,25 +43,6 @@ namespace Library
             }
         }
 
-        public string printAuthors
-        {
-            get
-            {
-                string s = string.Empty;
-                int i = 0;
-                while (authors[i] != null)
-                {
-                    if (i > 0)
-                    {
-                        s += "; ";
-                    }
-                    s += authors[i].LastName + ", " + authors[i].FirstName;
-                    i++;
-                }
-                return s;
-            }
-        }
-
         public Item()
         {
             title = string.Empty;
@@ -74,14 +55,5 @@ namespace Library
             title = t;
             year = y;
         }
-
-        public void setAuthors(params Author[] a)
-        {
-            for (int i = 0; i < a.Length; i++)
-            {
-                authors.SetValue(a[i], i);
-            }
-        }
-
     }
 }
