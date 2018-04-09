@@ -1,0 +1,3 @@
+Type: Book Year: 1991 Title: This is book 1 ISBN: 1234567890 Pages: 500
+Type: Movie Year: 2002 Title: This is movie 1 ISBN: 1209512357 LengthInSeconds: 7500 
+Type: Song Year: 1949 Title: This is song 1 ISBN: 2342342342 LengthInSeconds: 249
